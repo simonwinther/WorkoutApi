@@ -9,8 +9,8 @@ namespace WorkoutApi.Repositories
 {
     public class AccountRepository : IAccountRepository
     {
-        private readonly IAccountContext _context;
-        public AccountRepository(IAccountContext context)
+        private readonly IDataContext _context;
+        public AccountRepository(IDataContext context)
         {
             _context = context;
         }

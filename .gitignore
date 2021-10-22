@@ -1,8 +1,8 @@
-Api/appsettings.Development.json
-Api/appsettings.json
 bin/
 obj/
 */bin/
 */obj/s
 Migrations/
 */Migrations/
+.fake
+.ionide

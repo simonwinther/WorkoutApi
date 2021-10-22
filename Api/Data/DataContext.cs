@@ -10,5 +10,6 @@ namespace WorkoutApi.Data
 
         }
         public DbSet<Exercise> Exercises { get; init; }
+        public DbSet<Account> Accounts { get; init; }
     }
 }

@@ -39,8 +39,6 @@ namespace WorkoutApi
             services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IDataContext>(provider => provider.GetService<DataContext>());
             services.AddScoped<IExerciseRepository, ExerciseRepository>();
-
-            services.AddScoped<IAccountContext>(provider => provider.GetService<AccountContext>());
             services.AddScoped<IAccountRepository, AccountRepository>();
 
             /* JWT configuration */
